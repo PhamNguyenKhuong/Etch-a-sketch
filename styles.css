@@ -1,0 +1,96 @@
+* {
+    background-color: #22272e;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.grid {
+    height: 500px;
+    width: 500px;
+    box-shadow: 0px 0px 15px lightgrey;
+}
+
+.grid > .grid_row {
+    display: flex;
+}
+
+.grid .grid_element {
+    outline: 1px solid lightgrey;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu button, input {
+    border: solid 2px lightgrey;
+    border-radius: 15px;
+    box-shadow: 0 0 5px lightgrey;
+    transition-duration: 0.5s;
+}
+
+.menu > button {
+    height: 50px;
+    width: 200px;
+}
+
+.menu .color_picker {
+    display: inline;
+    box-shadow: none;
+    border: none;
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+}
+
+.setup, .slider_container{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.switch {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.switch > button{
+    height: 25px;
+    width: 100px;
+}
+
+input[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+  
+input[type='color']::-webkit-color-swatch {
+    border-radius: 50px;
+}
+
+.menu .slider {
+    box-shadow: none;
+}
